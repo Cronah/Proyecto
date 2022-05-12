@@ -1,0 +1,16 @@
+body {
+  background-color: black;
+}
+
+header {
+  background-color: white;
+}
+header nav a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+header nav .nav-link {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
