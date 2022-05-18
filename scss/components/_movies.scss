@@ -1,0 +1,28 @@
+h6{
+    color: white;
+}
+.images-3{
+    display: grid;
+    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    width: auto;
+    justify-items: center;
+    img{
+        border-style: solid;
+        border-radius: 5px;
+        border-color: grey;
+        margin-right: 20px;
+        width: 187px;
+        height: 265px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 20px;
+       
+        
+        
+    }
+}
+    .movies-main{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }

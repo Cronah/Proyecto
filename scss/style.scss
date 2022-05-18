@@ -1,5 +1,9 @@
-body{
-    background-color: black;
 
-}
-@import '../scss/components/header';
+@import '../scss/base/_header';
+@import '../scss/components/_index';
+@import '../scss/components/_body';
+@import '../scss/base/_footer';
+@import '../scss/components/_about-us';
+@import '../scss/components/_movies';
+@import '../scss/components/_series';
+@import '../scss/components/_we-recommend';

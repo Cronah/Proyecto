@@ -1,0 +1,29 @@
+.images-5{
+    display: grid;
+    /*grid-template-rows: repeat(2 , 1fr);*/
+    /*grid-template-columns: repeat(2 , 1fr);*/
+    width: auto;
+    justify-items: center;
+    img{
+        border-style: solid;
+        border-radius: 5px;
+        border-color: grey;
+        margin-right: 20px;
+        width: 187px;
+        height: 265px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 20px;
+       
+        
+        
+    }
+}
+    .recommended-movies-main{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .recommended-series-main{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
