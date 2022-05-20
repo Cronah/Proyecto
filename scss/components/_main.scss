@@ -1,0 +1,28 @@
+$headings: (
+h1: 4em,
+h2: 3em,
+h3: 2em,
+h4: 1em,
+h5: 0.75em,
+h6: 0.35em,
+);
+
+/*$h1: map-get($headings, h1 );*/
+
+h1{
+    font-size: map-get($map: $headings , $key: "h1" );
+}
+
+$colors: (
+    primario: white,
+    secundario: white,
+);
+
+/*Agrego ejemplo de mixing
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }*/
+

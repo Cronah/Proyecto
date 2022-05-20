@@ -177,4 +177,17 @@ h6 {
   margin-bottom: 5%;
 }
 
+/*$h1: map-get($headings, h1 );*/
+h1 {
+  font-size: 4em;
+}
+
+/*Agrego ejemplo de mixing
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }*/
+
 /*# sourceMappingURL=style.css.map */
