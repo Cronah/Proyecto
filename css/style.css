@@ -51,6 +51,8 @@ h2 a {
 }
 
 .body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
   background-color: black;
   text-align: center;
 }
@@ -150,10 +152,9 @@ h6 {
 
 .images-5 {
   display: grid;
-  /*grid-template-rows: repeat(2 , 1fr);*/
-  /*grid-template-columns: repeat(2 , 1fr);*/
+  grid-template-columns: repeat(5, 1fr);
   width: auto;
-  justify-items: center;
+  /*justify-items: center;*/
 }
 .images-5 img {
   border-style: solid;
@@ -175,6 +176,11 @@ h6 {
 .recommended-series-main {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
 /*$h1: map-get($headings, h1 );*/
