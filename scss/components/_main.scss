@@ -31,3 +31,16 @@ $colors: (
     border: 1px solid blue;
   }*/
 
+  /*Media qqueries*/
+  @media print {
+    body {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: 400px) and (min-height: 400px) {
+    article {
+      column-count: 2;
+    }
+  }
+
