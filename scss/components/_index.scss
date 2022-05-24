@@ -44,21 +44,48 @@ img:hover{
 }
 
 /*carousel*/
-
-.slide-center{
+.carousel-1{
     width: 50%;
-    margin-left: 25%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.carousel-item::before {
+    content: "";
+    background-image: linear-gradient(
+        to bottom,
+        transparent, rgba(0,0,0,0.5)
+    );
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-item img{
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+// .slide-center{
+//     width: 50%;
+//     margin-left: 25%;
+// }
 a:hover{
     color: white;
 }
-.recommended-hover{
-    transition: all 300ms;
-}
-.recommended-hover:hover {
-color: red;
-transform: scale(1.15);
-}
+// .recommended-hover{
+//     transition: all 300ms;
+// }
+// .recommended-hover:hover {
+// color: red;
+// transform: scale(1.15);
+// }
 
 .most-popular-3{
     margin-top: 5%;

@@ -49,22 +49,33 @@ h2 a {
 }
 
 /*carousel*/
-.slide-center {
+.carousel-1 {
   width: 50%;
-  margin-left: 25%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item::before {
+  content: "";
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  object-position: center;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
 }
 
 a:hover {
   color: white;
-}
-
-.recommended-hover {
-  transition: all 300ms;
-}
-
-.recommended-hover:hover {
-  color: red;
-  transform: scale(1.15);
 }
 
 .most-popular-3 {
@@ -92,33 +103,28 @@ a:hover {
  flex-direction: column;
  justify-content: center;
  align-content: space-between;*/
-#follow-us-item {
+.carlos #follow-us-item {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-
-h3 {
+.carlos h3 {
   color: red;
 }
-
-a {
+.carlos a {
   text-decoration: none;
   color: red;
 }
-
-#about-us-color h2 {
+.carlos #about-us-color h2 {
   color: red !important;
 }
-
-#about-us-color {
+.carlos #about-us-color {
   text-decoration: none;
 }
-
-.item.social {
+.carlos .item.social {
   text-align: center;
 }
-.item.social a {
+.carlos .item.social a {
   color: white;
   font-size: 20px;
   width: 36px;
@@ -132,7 +138,7 @@ a {
   color: #fff;
   opacity: 0.75;
 }
-.item.social a:hover {
+.carlos .item.social a:hover {
   opacity: 0.9;
 }
 
@@ -162,7 +168,7 @@ h6 {
   width: 187px;
   height: 265px;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
   transition: all 300ms;
 }
 .images-3 div img {
@@ -184,6 +190,11 @@ h6 {
 .movies-main {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.images-3 div h6 {
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 /*Media queries */
@@ -230,6 +241,11 @@ h6 {
   margin-bottom: 5%;
 }
 
+.images-4 div h6 {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 940px) {
   .images-4 {
     grid-template-columns: repeat(2, 1fr);
@@ -244,9 +260,10 @@ h6 {
 }
 .images-5 {
   display: grid;
+  /*grid-template-rows: repeat(3 , 1fr);*/
   grid-template-columns: repeat(5, 1fr);
   width: auto;
-  /*justify-items: center;*/
+  justify-items: center;
 }
 .images-5 img {
   border-style: solid;
@@ -257,7 +274,20 @@ h6 {
   height: 265px;
   margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 20px;
+  transition: all 300ms;
+}
+.images-5 img:hover {
+  transform: scale(1.15);
+}
+
+.series-main {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.images-5 div h6 {
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .recommended-movies-main {
@@ -270,9 +300,15 @@ h6 {
   margin-bottom: 5%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
   .images-5 {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .images-5 {
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
   }
 }
