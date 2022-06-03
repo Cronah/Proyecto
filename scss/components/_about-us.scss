@@ -1,8 +1,27 @@
-.body{
+body{
+    .background-image{
+    background-image: url("https://www.rd.com/wp-content/uploads/2022/01/GettyImages-174655938.jpg");
+}
     h1{
         color: white;
     }
     h3{
         color: white;
     }
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.about-us-h1{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.about-us-h2{
+    margin-bottom: 100px;
+}
+.about-us-h3{
+    margin-bottom: 100px;
 }

@@ -19,11 +19,18 @@ h2{
 
 /*IMAGENES*/
 .images-1{
+        display: grid;
+        /*grid-template-rows: repeat(3 , 1fr);*/
+        grid-template-columns: repeat(6, 1fr);
+        width: auto;
+        justify-items: center;
+        margin-bottom: 100px;
+        margin-top: 100px;
 img{
     border-style: solid;
     border-radius: 5px;
     border-color: grey;
-    margin-right: 20px;
+    margin-right: 50px;
     width: 187px;
     height: 265px;
     margin-top: 5%;
@@ -32,6 +39,10 @@ img{
 }
 img:hover{
     transform: scale(1.15);
+}
+.movie-tittle{
+    margin-left: -40px;
+    margin-top: 15px;
 }
 } 
 .most-popular{
@@ -95,4 +106,7 @@ a:hover{
 .text-center-2{
     margin-top: 5%;
     margin-bottom: 5%;
+}
+.stars-png{
+    
 }
